@@ -35,8 +35,8 @@
 
 ;; Find the user configuration path
 (defvar rational-config-path
-  (let ((home-dir (if (getenv "RATTIONAL_EMACS_HOME")
-                      (getenv "RATTIONAL_EMACS_HOME")
+  (let ((home-dir (if (getenv "RATIONAL_EMACS_HOME")
+                      (getenv "RATIONAL_EMACS_HOME")
                     (if (featurep 'chemacs)
                         ;; if we are using chemacs2, we assume we need
                         ;; to keep the rational-config-path within the
